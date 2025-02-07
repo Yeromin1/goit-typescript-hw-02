@@ -1,7 +1,6 @@
 import Modal from "react-modal";
 import styles from "./ImageModal.module.css";
 
-// Типизация для изображения
 interface Image {
   id: string;
   alt_description: string;
