@@ -1,0 +1,45 @@
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  /* padding: 20px; */
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  margin: 5% auto;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.modalImage {
+  width: 800px;
+  height: 480px;
+}
+
+.imageInfo {
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imageInfo p {
+  margin: 5px 0;
+  display: grid;
+  text-align: center;
+}
+
+.imageInfo a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.imageInfo a:hover {
+  text-decoration: underline;
+}

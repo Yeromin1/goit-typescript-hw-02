@@ -1,0 +1,26 @@
+body {
+  min-width: 320px;
+  padding: 50px 15px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 260px;
+  height: 150px;
+}
+
+button {
+  cursor: pointer;
+}
