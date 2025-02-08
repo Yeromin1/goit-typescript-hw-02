@@ -27,6 +27,10 @@ interface Image {
   likes: number;
 }
 
+interface UnsplashApiResponse {
+  results: Image[];
+}
+
 const App = () => {
   const [query, setQuery] = useState<string>("");
   const [images, setImages] = useState<Image[]>([]);
@@ -45,7 +49,7 @@ const App = () => {
     setLoading(true);
     setError(false);
     try {
-      const response = await axios.get(UNSPLASH_URL, {
+      const response = await axios.get<UnsplashApiResponse>(UNSPLASH_URL, {
         params: { query, page, per_page: 12 },
         headers: {
           Authorization: `Client-ID ${API_KEY}`,
